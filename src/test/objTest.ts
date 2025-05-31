@@ -60,6 +60,32 @@ export const objText: Group<Record<string, any>> = {
         },
       ],
     },
+    {
+      typeFilter: "Group",
+      typeGroup: "AND",
+      group: [
+        {
+          typeFilter: "Group",
+          typeGroup: "AND",
+          group: [
+            {
+              typeFilter: "Filter",
+              type: "boolean",
+              queryName: "",
+              operator: "!=",
+              value: 0,
+            },
+          ],
+        },
+        {
+          typeFilter: "Filter",
+          queryName: "StationName",
+          type: "string",
+          operator: "=",
+          value: "BODEGA2",
+        },
+      ],
+    },
   ],
 };
 
