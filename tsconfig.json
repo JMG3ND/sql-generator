@@ -1,0 +1,20 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    // Rutas
+    "outDir": "./dist", // Directorio de salida para los archivos JavaScript compilados
+    "rootDir": "./src", // Directorio raíz de tus archivos fuente TypeScript
+
+    // Opciones de compilación
+    "target": "es2018", // Nivel de ECMAScript para el código JS de salida (ej: es2018, es2020)
+    "module": "commonjs", // Sistema de módulos a usar (commonjs para Node, esnext para ESM)
+    "declaration": true, // Genera archivos .d.ts (archivos de definición de tipos)
+    "sourceMap": true, // Genera archivos .map para depuración
+    "esModuleInterop": true, // Permite la importación de módulos CommonJS como módulos ES
+    "forceConsistentCasingInFileNames": true, // Asegura consistencia en nombres de archivos
+    "strict": true, // Habilita un conjunto estricto de opciones de verificación de tipos
+    "skipLibCheck": true // Omite la verificación de tipos de todos los archivos .d.ts
+  },
+  "include": ["src/**/*.ts"], // Incluye todos los archivos .ts dentro de la carpeta 'src'
+  "exclude": ["node_modules", "dist"] // Excluye estos directorios de la compilación
+}
