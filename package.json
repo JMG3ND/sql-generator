@@ -1,7 +1,7 @@
 {
   "name": "sql-generator",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "node ./dist/test/objTest.js",
     "build": "npx tsc",
