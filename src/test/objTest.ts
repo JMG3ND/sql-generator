@@ -1,4 +1,4 @@
-import type { Group } from "../types/structure.ts";
+import type { Group } from "../types/.d.ts";
 import { generateFilter } from "../functions/generateFilter";
 
 export const objText: Group<Record<string, any>> = {

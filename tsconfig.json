@@ -15,6 +15,6 @@
     "strict": true, // Habilita un conjunto estricto de opciones de verificación de tipos
     "skipLibCheck": true // Omite la verificación de tipos de todos los archivos .d.ts
   },
-  "include": ["src/**/*.ts"], // Incluye todos los archivos .ts dentro de la carpeta 'src'
+  "include": ["src/**/*.ts", "src/types/.d.ts", "src/.d.ts"], // Incluye todos los archivos .ts dentro de la carpeta 'src'
   "exclude": ["node_modules", "dist"] // Excluye estos directorios de la compilación
 }
