@@ -1,4 +1,4 @@
-import type { Filter, ItemsValueTypes } from "../types/.d";
+import type { Filter, ItemsValueTypes } from "../types/structure";
 
 /**
  * Genera una cadena de condición de filtro SQL basada en el objeto de filtro proporcionado.

@@ -1,4 +1,4 @@
-import { Group } from "../types/.d";
+import { Group } from "../types/structure";
 import { filter } from "./filter";
 
 /**
