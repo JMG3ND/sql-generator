@@ -39,7 +39,13 @@ export const objText: Group<Record<string, any>> = {
       operator: "LIKE",
       value: "#%",
     },
-
+    {
+      typeFilter: "Filter",
+      queryName: "StorageName",
+      type: "string",
+      operator: "!=",
+      value: "#DESC",
+    },
     {
       typeFilter: "Group",
       typeGroup: "OR",
@@ -50,32 +56,6 @@ export const objText: Group<Record<string, any>> = {
           type: "string",
           operator: "=",
           value: "CONGELADO",
-        },
-        {
-          typeFilter: "Filter",
-          queryName: "StationName",
-          type: "string",
-          operator: "=",
-          value: "BODEGA2",
-        },
-      ],
-    },
-    {
-      typeFilter: "Group",
-      typeGroup: "AND",
-      group: [
-        {
-          typeFilter: "Group",
-          typeGroup: "AND",
-          group: [
-            {
-              typeFilter: "Filter",
-              type: "boolean",
-              queryName: "",
-              operator: "!=",
-              value: 0,
-            },
-          ],
         },
         {
           typeFilter: "Filter",

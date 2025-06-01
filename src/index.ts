@@ -1,3 +1,4 @@
 import { generateFilter } from "./functions/generateFilter";
+import { filter } from "./functions/filter";
 
-export default { generateFilter };
+export default { generateFilter, filter };
