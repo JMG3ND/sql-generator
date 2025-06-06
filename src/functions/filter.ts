@@ -30,8 +30,7 @@ function getValue(
       return `${value}`;
     case "date":
       if (typeof value === "string")
-        return `${value.replaceAll(/-|\//g, "")} 00:00:00.000`;
-      return `${value}`;
+        return `'${value.replaceAll(/-|\//g, "")} 00:00:00.000'`;
     case "string":
     default:
       return `'${value}'`;
