@@ -6,7 +6,7 @@
     "rootDir": "./src", // Directorio raíz de tus archivos fuente TypeScript
 
     // Opciones de compilación
-    "target": "es2018", // Nivel de ECMAScript para el código JS de salida (ej: es2018, es2020)
+    "target": "es2024", // Nivel de ECMAScript para el código JS de salida (ej: es2018, es2020)
     "module": "commonjs", // Sistema de módulos a usar (commonjs para Node, esnext para ESM)
     "declaration": true, // Genera archivos .d.ts (archivos de definición de tipos)
     "sourceMap": true, // Genera archivos .map para depuración

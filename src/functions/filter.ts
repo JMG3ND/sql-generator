@@ -28,8 +28,11 @@ function getValue(
     case "number":
     case "boolean":
       return `${value}`;
-    case "string":
     case "date":
+      if (typeof value === "string")
+        return `${value.replaceAll(/-|\//g, "")} 00:00:00.000`;
+      return `${value}`;
+    case "string":
     default:
       return `'${value}'`;
   }

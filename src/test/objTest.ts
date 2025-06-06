@@ -66,9 +66,17 @@ export const objText: Group<Record<string, any>> = {
         },
       ],
     },
+    {
+      typeFilter: "Filter",
+      queryName: "StorageName",
+      type: "date",
+      operator: ">",
+      value: "2025-06/01",
+    },
   ],
 };
 
 const response = generateFilter(objText);
 
+console.log("TEST 1");
 console.log(response);
